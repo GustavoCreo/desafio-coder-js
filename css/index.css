@@ -11,3 +11,20 @@
     font-style: oblique;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.subFont{
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.imgSize{
+    height: 300px;
+    width: 300px;
+}
+
+.subFont2{
+    font-size: 20px;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+}
