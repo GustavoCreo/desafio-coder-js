@@ -3,12 +3,14 @@ let btn = document.getElementById("btn");
 
 
 btn.addEventListener("click", function () {
+    //productos
     let tiraAsado = 200;
     let bondiola = 400;
     let chori = 175;
     let tapa = 250;
     let bife = 200;
     let ojoBife = 500;
+    //calculos
     let cantidadTiraAsado = document.getElementById("cantidadTira").value;
     let numeroTira = (cantidadTiraAsado * tiraAsado)
     let cantidadBondiola = document.getElementById("cantidadBondiola").value;
