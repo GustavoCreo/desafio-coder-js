@@ -1,3 +1,11 @@
+//Local Storage
+localStorage.setItem('tiraDeAsado','200')
+localStorage.setItem('bondiola','400')
+localStorage.setItem('chori','175')
+localStorage.setItem('tapaDeNalga','250')
+localStorage.setItem('bifeDeChorizo','200')
+localStorage.setItem('ojoDeBife','500')
+
 //Array
 const precios = ["Chori ", "Bondiola ", "Tira de Asado "]
 
@@ -8,12 +16,12 @@ let btn = document.getElementById("btn");
 
 btn.addEventListener("click", function () {
     //productos
-    let tiraAsado = 200;
-    let bondiola = 400;
-    let chori = 175;
-    let tapa = 250;
-    let bife = 200;
-    let ojoBife = 500;
+    let tiraAsado = localStorage.getItem('tiraDeAsado');
+    let bondiola = localStorage.getItem('bondiola');
+    let chori = localStorage.getItem('chori');
+    let tapa = localStorage.getItem('tapaDeNalga');
+    let bife = localStorage.getItem('bifeDeChorizo');
+    let ojoBife = localStorage.getItem('ojoDeBife');
     //calculos
     let cantidadTiraAsado = document.getElementById("cantidadTira").value;
     let numeroTira = (cantidadTiraAsado * tiraAsado)
@@ -33,12 +41,12 @@ btn.addEventListener("click", function () {
 console.log(costoTotal)
 
 //Prompt
-function solicitarNombre(){
+/*function solicitarNombre(){
     let nombreIngresado   = prompt("Ingresar nombre")
     alert("Benvenido/a " + nombreIngresado)
 } 
 
-solicitarNombre("")
+solicitarNombre("")*/
 
 //getElementBy
 let subTitulo = document.getElementById("subTextoParri")
