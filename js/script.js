@@ -1,6 +1,10 @@
+//Array
+const precios = ["Chori ", "Bondiola ", "Tira de Asado "]
+
+console.log( precios.join(" + ") ) 
+
+//Pedidos
 let btn = document.getElementById("btn");
-
-
 
 btn.addEventListener("click", function () {
     //productos
@@ -27,3 +31,16 @@ btn.addEventListener("click", function () {
 })
 
 console.log(costoTotal)
+
+//Prompt
+function solicitarNombre(){
+    let nombreIngresado   = prompt("Ingresar nombre")
+    alert("Benvenido/a " + nombreIngresado)
+} 
+
+solicitarNombre("")
+
+//getElementBy
+let subTitulo = document.getElementById("subTextoParri")
+//texto en linea 44 de html
+subTitulo.innerHTML = "<p>El mejor Parri-Pollo de Lugano</p>"
