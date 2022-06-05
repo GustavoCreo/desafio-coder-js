@@ -36,9 +36,21 @@ btn.addEventListener("click", function () {
     let cantidadOjo = document.getElementById("cantidadOjo").value;
     let numeroOjo = (cantidadOjo * ojoBife)
     let costoTotal = document.getElementById("costoTotal").value = (numeroTira + numeroBondiola + numeroChori + numeroTapa + numeroBife + numeroOjo);
+    
+    //Alerta con uso de libreria
+    Swal.fire({
+            title: 'Genial!',
+            text: 'Tu pedido se ha hecho!',
+            type: 'success',
+            confirmButtonText: 'Ok'
+    })
+    
 })
 
 console.log(costoTotal)
+
+
+
 
 //Prompt
 /*function solicitarNombre(){
